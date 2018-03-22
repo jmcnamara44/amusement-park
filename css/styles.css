@@ -1,3 +1,6 @@
 .rides {
   display: none;
 }
+ li {
+   margin-right: 20%;
+ }

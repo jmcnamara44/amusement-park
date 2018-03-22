@@ -9,21 +9,28 @@
   </head>
   <body>
     <div class="container">
+
+
       <h1>Amusement Park<hr></h1>
+
+
+
+
       <!-- <h3>Height Indicator</h3> -->
       <h4>Please enter your height to determine what rides you can...ride</h4>
 
       <form id="heightForm">
         <div class="col-md-5">
-          <select class="form-control" id="beverage">
-            <option>Pee-Wee Cruiser</option>
-            <option>Bumper Cars</option>
-            <option>Ferris Wheel</option>
-            <option>Merry-Go-Round</option>
-            <option>Highway to Heaven</option>
-            <option>Hell Coaster </option>
+          <select class="form-control" id="height">
+            <option value="1">Under 4'0"</option>
+            <option value="2">Between 4'1" - 5'0"</option>
+            <option value="3">Between 5'1" - 5'9" </option>
+            <option value="4">Between 5'10" - 6'8"</option>
+            <option value="5">Above 6'8"</option>
           </select>
         </div>
+        <button type="submit" class="btn btn-primary">confirm</button>
+
       </form>
 
 
@@ -35,18 +42,27 @@
           </form> -->
       <!-- Box Input -->
 
-      <div class="rides">
 
+      <div class="rides" id="kids">
         <h3>Pee-Wee Cruiser</h3>
         <h3>Bumper Cars</h3>
+      </div>
+
+      <div class="rides" id="teens">
         <h3>Ferris Wheel</h3>
         <h3>Merry-Go-Round</h3>
+      </div>
+      <div class="rides" id="adults">
         <h3>Highway to Heaven</h3>
         <h3>Hell Coaster </h3>
-
-
-
       </div>
+      <div class="rides" id="tooTall">
+        <h3>You are too tall to have fun</h3>
+      </div>
+
+
+
+
 
 
 

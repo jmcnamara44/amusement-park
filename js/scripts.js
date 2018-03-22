@@ -3,13 +3,23 @@ $(document).ready(function() {
 
     event.preventDefault();
 
-    var inputHeight = $("input#height").val();
+    var inputHeight = parseInt($("#height").val());
 
-    if (inputHeight >= 60) {
-      $(".rides").show();
+    if (inputHeight === 1) {
+        $(".rides").hide();
+        $("#kids").show();
 
+    } else if (inputHeight === 2) {
+        $(".rides").hide();
+        $("#kids").show();
+        $("#teens").show();
+    } else if (inputHeight === 3 || inputHeight === 4) {
+        $(".rides").hide();
+        $("#teens").show();
+        $("#adults").show();
     } else {
-      $(".rides").hide();
+        $(".rides").hide();
+        $("#tooTall").show();
     }
   });
 });
